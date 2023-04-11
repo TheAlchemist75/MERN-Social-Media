@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:wght@700&family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap&family=Sail&display=swap');
+
 :root {
+  --dark: rgb(20, 20, 20);
+  --dark2: rgba(27, 26, 39, 255);
+  --red2: rgba(248, 79, 57, 255);
   --yellow: #f5c32c;
   --orange: #fca61f;
   --black: #242d49;

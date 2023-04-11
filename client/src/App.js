@@ -5,6 +5,7 @@ import Auth from "./pages/Auth/Auth";
 import Profile from "./pages/Profile/Profile";
 import { useSelector } from "react-redux";
 import Chat from "./pages/Chat/Chat";
+import Landing from "./Landing/Landing";
 
 function App() {
   const user = useSelector((state) => state.authReducer.authData);
@@ -21,10 +22,11 @@ function App() {
       <div className="blur" style={{ top: "-18%", right: "0" }}></div>
       <div className="blur" style={{ top: "36%", left: "-8rem" }}></div>
       <Routes>
-        <Route
+        <Route exact path='/' element={<Landing />} />
+        {/* <Route
           path="/"
           element={user ? <Navigate to="home" /> : <Navigate to="auth" />}
-        />
+        /> */}
         <Route
           path="/home"
           element={user ? <Home /> : <Navigate to="../auth" />}
