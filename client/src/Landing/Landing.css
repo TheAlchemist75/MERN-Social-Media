@@ -1,0 +1,138 @@
+body {
+    background-color: var(--dark) !important;
+    margin: 0px !important;
+}
+
+.Topbar{
+    background-color: var(--dark2) !important;
+    margin-top: -17px;
+    margin-left: -16px;
+    width: 1300px;
+    height: 80px;
+}
+
+.brand-logo {
+    font-family: 'Cairo Play';
+    font-size: 2.3rem;
+    text-decoration: none !important;
+    color: white;
+    padding: 30px;
+}
+
+.b1 {
+    font-weight: bold;
+    /* font-family: "Lobster"; */
+    text-decoration: none !important;
+    float: right;
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 1300px;
+    margin-left: -20px;
+}
+
+.side .title {
+    /* font-family: "Rubik", sans-serif; */
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5vw;
+    margin: 0px 10vw;
+    width: 80vw;
+}
+
+.side .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+}
+
+#left-side {
+    background-color: var(--dark2) !important;
+    width: 60%;
+    z-index: 2;
+}
+
+#left-side .title {
+    color: white !important;
+}
+
+#left-side .fancy {
+    color: var(--red2) !important;
+}
+
+#right-side {
+    background-color: var(--red2) !important;
+}
+
+#right-side .title {
+    color: var(--dark) !important;
+}
+
+#right-side .fancy {
+    color: white !important;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #0a2540;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    animation: border-anim 2s linear infinite;
+}
+
+.btn:hover {
+    background-color: #0f2c4f;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 0px 10px rgba(10, 37, 64, 0.8), 0px 0px 20px rgba(10, 37, 64, 0.6), 0px 0px 30px rgba(10, 37, 64, 0.4);
+    }
+
+    to {
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(10, 37, 64, 0.8), 0px 0px 30px rgba(10, 37, 64, 0.6), 0px 0px 45px rgba(10, 37, 64, 0.4);
+    }
+}
+
+@keyframes border-anim {
+    from {
+        box-shadow: inset 0px 0px 0px 3px #0a2540;
+    }
+
+    to {
+        box-shadow: inset 0px 0px 0px 30px #0a2540;
+    }
+}
