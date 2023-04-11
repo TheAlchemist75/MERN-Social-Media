@@ -17,7 +17,7 @@
 
 /* left side */
 .a-left{
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .a-left > img {
@@ -27,31 +27,19 @@
 
 .Webname > h1 {
     font-size: 3rem;
-    background-color: red;
-  
-    /* Create the gradient. */
-    background-image: var(--buttonBg);
-    
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-  
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    color: black !important;
+    margin-left: -100px;
 }
 
 .Webname>h6{
-    font-size: 0.85rem;
+  color: red;
+  font-size: 1.5rem !important;
+  font-family: "Rouge Script", Tofu;
+  font-weight: bold;
+  margin-left: -50px;
 }
 
-
-
 /* right side */
-
 
 .authForm{
     background-color: var(--cardColor);
@@ -63,4 +51,34 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.floating-image {
+  position: relative;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.floating-image img {
+  margin-bottom: -100px;
+  height: 550px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }

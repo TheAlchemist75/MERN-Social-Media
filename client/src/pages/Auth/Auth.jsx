@@ -53,11 +53,15 @@ const Auth = () => {
       {/* left side */}
 
       <div className="a-left">
-        <img src={Logo} alt="" />
+        {/* <img src={Logo} alt="" /> */}
+        <div className="floating-image">
+          <div className="glow"></div>
+          <img src="https://res.cloudinary.com/dcprg19es/image/upload/v1681239255/Social%20Media/Login-man_cfdgxy.png" alt="Floating Image" />
+        </div>
 
         <div className="Webname">
-          <h1>ZKC Media</h1>
-          <h6>Explore the ideas throughout the world</h6>
+          <h1 className="brand-logo">TECSocial.</h1>
+          <h6>Where every student has a voice!</h6>
         </div>
       </div>
 
