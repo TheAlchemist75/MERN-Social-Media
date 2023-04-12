@@ -13,7 +13,7 @@ const TrendCard = () => {
             <ul className="sidebarList">
             <li className="sidebarListItem">
                 <Campaign className="sidebarIcon" />
-                <Link to={""}>
+                <Link to={"/announcement"}>
                     <span className='sidebarText'>Announcements</span>
                 </Link>
             </li>
