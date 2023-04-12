@@ -37,6 +37,6 @@ export default function Landing() {
 				</h2>
 			</div>
             
-		</div>
+		</div> 
 	);
 }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./Auth.css";
-import Logo from "../../img/logo.png";
 import { logIn, signUp } from "../../actions/AuthActions.js";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
+import "./Auth.css";
 
 const Auth = () => {
   const initialState = {
@@ -17,11 +17,8 @@ const Auth = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isSignUp, setIsSignUp] = useState(false);
-
   const [data, setData] = useState(initialState);
-
   const [confirmPass, setConfirmPass] = useState(true);
-
   // const dispatch = useDispatch()
 
   // Reset Form
@@ -50,18 +47,16 @@ const Auth = () => {
 
   return (
     <div className="Auth">
-      {/* left side */}
-
       <div className="a-left">
-        {/* <img src={Logo} alt="" /> */}
         <div className="floating-image">
-          <div className="glow"></div>
           <img src="https://res.cloudinary.com/dcprg19es/image/upload/v1681239255/Social%20Media/Login-man_cfdgxy.png" alt="Floating Image" />
         </div>
 
         <div className="Webname">
-          <h1 className="brand-logo">TECSocial.</h1>
-          <h6>Where every student has a voice!</h6>
+          {/* <h1 className="brand-logo">TECSocial.</h1>
+          <h6 className="logo-desc">Where every student has a voice!</h6> */}
+          <div className="brand-logo" >TECSocial.</div>
+          <span className="loginDesc"> Where every student has a voice!</span>
         </div>
       </div>
 
