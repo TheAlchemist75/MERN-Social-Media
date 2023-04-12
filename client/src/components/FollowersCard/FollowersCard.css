@@ -8,6 +8,7 @@
     font-size: 13px;
     max-height: 10rem;
 }
+
 .follower{
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,6 @@
     display: flex;
     gap: 10px;
 }
-
 
 .followerImage{
     width: 3.2rem;
@@ -36,8 +36,6 @@
 .name>span:nth-of-type(1){
     font-weight: bold;
 }
-
-
 
 .fc-button{
     height: 2rem;

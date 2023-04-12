@@ -2,7 +2,7 @@
   display: flex;
   gap: 0.75rem;
 }
-.Search {
+/* .Search {
   display: flex;
   background-color: var(--inputColor);
   border-radius: 10px;
@@ -21,4 +21,10 @@
   border-radius: 5px;
   padding: 4px;
   color: white;
+} */
+
+.brand-logo1 {
+  font-family: 'Cairo Play';
+  font-size: 2.5rem;
+  color: black !important;
 }

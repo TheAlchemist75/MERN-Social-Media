@@ -13,4 +13,4 @@ const ProfileSide = () => {
     )
 }
 
-export default ProfileSide
+export default ProfileSide;

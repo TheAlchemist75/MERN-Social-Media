@@ -1,9 +1,10 @@
 import React from "react";
 import "./ProfileCard.css";
-import Cover from "../../img/cover.jpg";
-import Profile from "../../img/profileImg.jpg";
+// import Cover from "../../img/cover.jpg";
+// import Profile from "../../img/profileImg.jpg";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+
 const ProfileCard = ({location}) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const posts = useSelector((state)=>state.postReducer.posts)
@@ -28,7 +29,7 @@ const ProfileCard = ({location}) => {
       </div>
       <div className="ProfileName">
         <span>{user.firstname} {user.lastname}</span>
-        <span>{user.worksAt? user.worksAt : 'Write about yourself'}</span>
+        <span>{user.worksAt? user.worksAt : 'Write about yourself!'}</span>
       </div>
 
       <div className="followStatus">
