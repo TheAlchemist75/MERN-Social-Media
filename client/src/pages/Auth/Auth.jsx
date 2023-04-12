@@ -55,7 +55,7 @@ const Auth = () => {
         <div className="Webname">
           {/* <h1 className="brand-logo">TECSocial.</h1>
           <h6 className="logo-desc">Where every student has a voice!</h6> */}
-          <div className="brand-logo" >TECSocial.</div>
+          <div className="brand-logo1" >TECSocial.</div>
           <span className="loginDesc"> Where every student has a voice!</span>
         </div>
       </div>

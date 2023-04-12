@@ -13,10 +13,10 @@ body {
 
 .brand-logo {
     font-family: 'Cairo Play';
-    font-size: 2.3rem;
+    font-size: 2.3rem !important;
     text-decoration: none !important;
-    color: white;
-    padding: 30px;
+    color: white !important;
+    padding: 30px !important;
 }
 
 .b1 {

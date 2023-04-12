@@ -14,7 +14,7 @@ export default function Landing() {
 	return (
 		<div>
 			<div className='Topbar'>
-				<a href='#' className='brand-logo'>
+				<a href='#' className='brand-logo' style={{padding: "30px"}}>
 			        TECSocial.
 				</a>
                 <Link to='/auth' className='b1'>

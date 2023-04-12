@@ -15,7 +15,7 @@
 
 /* left side */
 
-.brand-logo{
+.brand-logo1{
   font-size: 3.5rem !important;
   color: black !important;
   margin-left: -30px;
@@ -26,6 +26,7 @@
   font-size: 2rem !important;
   font-family: "Rouge Script", Tofu;
   font-weight: bold;
+  margin-left: -30px;
 }
 
 /* right side */

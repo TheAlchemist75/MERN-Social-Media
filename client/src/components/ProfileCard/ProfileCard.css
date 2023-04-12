@@ -21,7 +21,8 @@
   width: 100%;
 }
 .ProfileImages > img:nth-of-type(2) {
-  width: 6rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   position: absolute;
   bottom: -3rem;
@@ -83,9 +84,6 @@
   height: 150%;
   border-left: 2px solid var(--hrColor);
 }
-
-
-
 
 .ProfileCard>span
 {

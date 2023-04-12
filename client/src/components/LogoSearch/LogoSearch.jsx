@@ -9,7 +9,7 @@ const LogoSearch = () => {
     <div className="LogoSearch">
       {/* <img src={Logo} alt="" /> */}
 
-      <div className="brand-logo1">TECSocial.</div>
+      <div className="brand-logo2">TECSocial.</div>
 
       {/* <div className="Search">
           <input type="text" placeholder="#Explore"/>
