@@ -20,7 +20,7 @@ const TrendCard = () => {
 
             <li className="sidebarListItem">
                 <CalendarMonth className="sidebarIcon" />
-                <Link to={""}>
+                <Link to={"/academiccal"}>
                     <span className='sidebarText'>Academic Calendar</span>
                 </Link>
             </li>
