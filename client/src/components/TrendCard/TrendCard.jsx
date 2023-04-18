@@ -32,7 +32,7 @@ const TrendCard = () => {
 
             <li className="sidebarListItem">
                 <AutoStories className="sidebarIcon" />
-                <Link to={""}>
+                <Link to={"/resources"}>
                     <span className='sidebarText'>Resources</span>
                 </Link>
             </li> 
