@@ -36,7 +36,7 @@ const Post = ({ data }) => {
 	return (
 		<div className='Post'>
 			<div className='username'>
-				<b>{userName}</b>
+				{/* <b>{userName}</b> */}
 			</div>
 			<div className='detail'>
 				<span>
