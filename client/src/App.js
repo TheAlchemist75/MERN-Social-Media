@@ -8,6 +8,8 @@ import Chat from "./pages/Chat/Chat";
 import Landing from "./Landing/Landing";
 import Announcement from "./components/Announcement/Announcement";
 import Academiccal from "./components/Academiccal/Academiccal";
+import Resources from "./components/Resources/Resources";
+import Job from "./components/Job/Job";
 
 function App() {
   const user = useSelector((state) => state.authReducer.authData);
@@ -56,6 +58,8 @@ function App() {
         />
         <Route exact path='/announcement' element={<Announcement />} />
         <Route exact path='/academiccal' element={<Academiccal />} />
+        <Route exact path='/resources' element={<Resources />} />
+        <Route exact path='/job' element={<Job />} />
       </Routes>
     </div>
   );
