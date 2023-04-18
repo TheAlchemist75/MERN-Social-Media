@@ -1,0 +1,97 @@
+.Job {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 20rem;
+    gap: 1rem;
+}
+
+.resHead {
+    padding-bottom: 30px;
+    font-size: 3.5rem;
+    font-family: "Sail";
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, #f84f39, #f64845, #f34350, #ef3f5a, #e93d64, #e33c6c, #dc3d73, #d53e7a, #cc4081, #c24387, #b8468c, #ad4990);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.announcement-header p {
+    font-size: 1rem;
+    color: #4c4c4c;
+}
+
+.job {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.job img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.job h2 {
+    color: #222222;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    text-align: center;
+}
+
+.job p {
+    color: #777777;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem;
+    text-align: center;
+}
+
+.job ul {
+    border-top: 1px solid #dddddd;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.job li {
+    color: #777777;
+    flex: 1;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.job li svg {
+    fill: #777777;
+    height: 1rem;
+    margin-right: 0.5rem;
+    width: 1rem;
+}
+
+.job .apply {
+    background-color: #f44336;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.job .apply:hover {
+    background-color: #d32f2f;
+}

@@ -46,7 +46,9 @@ const TrendCard = () => {
 
             <li className="sidebarListItem">
                 <Work className="sidebarIcon" />
-                <span className='sidebarText'>Job and internship</span>
+                <Link to={"/job"}>
+                    <span className='sidebarText'>Job and internship</span>
+                </Link>
             </li>
 
             <li className="sidebarListItem">

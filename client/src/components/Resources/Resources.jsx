@@ -57,7 +57,7 @@ function Resources() {
 						</form>
 					</div>
 
-					<div style={{ padding: '20px', marginLeft: "20px" , marginRight: "-20px"}}>
+					<div style={{ padding: '20px', width: "100%"}}>
 						<div className='resBox'>
 							<div className='resContent'>
 								<h2 style={{ color: 'black' }}>Computer Engineering</h2>
