@@ -25,7 +25,7 @@ function Job() {
                         <div style={{padding: "10px"}}>
 
                         <div className="job" >
-                            <img src="https://via.placeholder.com/350x150" alt="Job Logo"/>
+                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210310114057/web-development-image.png" alt="Job Logo"/>
                             <h2>Web Developer</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem ac sodales viverra, mi lorem dignissim purus, non ullamcorper nibh velit id mauris.</p>
                             <ul>
@@ -37,7 +37,7 @@ function Job() {
                         </div>
 
                         <div className="job" >
-                            <img src="https://via.placeholder.com/350x150" alt="Job Logo"/>
+                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210310114057/web-development-image.png" alt="Job Logo"/>
                             <h2>Web Developer</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem ac sodales viverra, mi lorem dignissim purus, non ullamcorper nibh velit id mauris.</p>
                             <ul>
@@ -49,7 +49,7 @@ function Job() {
                         </div>
 
                         <div className="job" >
-                            <img src="https://via.placeholder.com/350x150" alt="Job Logo"/>
+                            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210310114057/web-development-image.png" alt="Job Logo"/>
                             <h2>Web Developer</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem ac sodales viverra, mi lorem dignissim purus, non ullamcorper nibh velit id mauris.</p>
                             <ul>
