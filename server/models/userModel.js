@@ -22,7 +22,10 @@ const UserSchema = mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
-		profilePicture: String,
+		profilePicture: {
+			type: String,
+			default: 'https://icon-library.com/icon/no-profile-picture-icon-6.html.html',
+		},
 		coverPicture: String,
 		about: String,
 		livesIn: String,

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { likePost } from '../../api/PostsRequests';
 import Comment from '../../img/comment.png';
@@ -27,25 +27,39 @@ const Post = ({ data }) => {
 	// 		// always executed
 	// 		// const userName = response.data.username;
 	// 	});
-//----------------------------------------------------------
-// Declare the variable outside the axios function
-let userName;
+	//----------------------------------------------------------
+	// Declare the variable outside the axios function
+	// let userName;
 
-axios
-  .get(`http://localhost:5000/user/${data.userId}`)
-  .then(function (response) {
-    // Set the value of the userName variable inside the response function
-    userName = response.data.username;
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // Display the userName variable in the username div element
-    const usernameDiv = document.querySelector('.username');
-    usernameDiv.innerHTML = `<b>${userName}</b>`;
-  });
+	// axios
+	// 	.get(`http://localhost:5000/user/${data.userId}`)
+	// 	.then(function (response) {
+	// 		// Set the value of the userName variable inside the response function
+	// 		userName = [response.data.username];
+	// 		console.log(userName);
+	// 	})
+	// 	.catch(function (error) {
+	// 		// handle error
+	// 		console.log(error);
+	// 	});
+	//   .then(function () {
+	//     // Display the userName variable in the username div element
+	//     const usernameDiv = document.querySelector('.username');
+	//     usernameDiv.innerHTML = `<b>${userName}</b>`;
+	//   });
+
+	const [userName, setUserName] = useState('');
+
+	useEffect(() => {
+		axios
+			.get(`http://localhost:5000/user/${data.userId}`)
+			.then(function (response) {
+				setUserName(response.data.username);
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
+	}, []);
 
 	const handleLike = () => {
 		likePost(data._id, user._id);
@@ -55,7 +69,7 @@ axios
 	return (
 		<div className='Post'>
 			<div className='username'>
-				<b>{`<b>${userName}</b>`}</b>
+				<b>{userName}</b>
 			</div>
 			<div className='detail'>
 				<span>
