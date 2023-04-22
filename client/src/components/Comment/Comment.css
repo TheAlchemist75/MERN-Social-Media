@@ -1,0 +1,23 @@
+.Comment {
+	margin-top: 20px;
+}
+
+.Comment h3 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.Comment p {
+	margin-bottom: 5px;
+}
+
+.Comment input[type='text'] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.Comment button[type='submit'] {
+	display: block;
+	margin-top: 10px;
+}
