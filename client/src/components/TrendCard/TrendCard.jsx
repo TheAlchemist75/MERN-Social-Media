@@ -43,7 +43,7 @@ const TrendCard = () => {
 
           <li className={`sidebarListItem ${location.pathname === '/studentorgs' ? 'active' : ''}`}>
             <PeopleAlt className="sidebarIcon" />
-            <Link to={""}>
+            <Link to={"/student"}>
               <span style={{color: "black"}} className='sidebarText'>Student organizations</span>
             </Link>
           </li>
@@ -57,7 +57,7 @@ const TrendCard = () => {
 
           <li className={`sidebarListItem ${location.pathname === '/events' ? 'active' : ''}`}>
             <EventNote className="sidebarIcon" />
-            <Link to={"/"}>
+            <Link to={"/campus"}>
               <span style={{color: "black"}} className='sidebarText'>Campus Events</span>
             </Link>
           </li>
