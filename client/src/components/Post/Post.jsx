@@ -15,14 +15,21 @@ const Post = ({ data }) => {
 	const [userName, setUserName] = useState('');
 
 	useEffect(() => {
+		let isMounted = true;
 		axios
 			.get(`http://localhost:5000/user/${data.userId}`)
 			.then(function (response) {
-				setUserName(response.data.username);
+				if (isMounted) {
+					setUserName(response.data.username);
+				}
 			})
 			.catch(function (error) {
 				console.log(error);
 			});
+
+		return () => {
+			isMounted = false;
+		};
 	}, [data.userId]);
 
 	const handleLike = () => {
