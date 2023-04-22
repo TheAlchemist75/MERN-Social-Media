@@ -93,7 +93,7 @@ const TrendCard = () => {
 
           <li className={`sidebarListItem ${location.pathname === '/forums' ? 'active' : ''}`}>
             <Forum className="sidebarIcon" />
-            <a href='https://tecsocial-forum.boards.net/'>
+            <a href='https://tecsocial-forum.boards.net/' target="_blank">
                 <span style={{color: "black"}} className='sidebarText'>Forums</span>
             </a>
           </li>
@@ -107,7 +107,7 @@ const TrendCard = () => {
 
           <li className={`sidebarListItem ${location.pathname === '/studentorgs' ? 'active' : ''}`}>
             <PeopleAlt className="sidebarIcon" />
-            <Link to={"/"}>
+            <Link to={""}>
               <span style={{color: "black"}} className='sidebarText'>Student organizations</span>
             </Link>
           </li>
