@@ -10,6 +10,8 @@ import Announcement from "./components/Announcement/Announcement";
 import Academiccal from "./components/Academiccal/Academiccal";
 import Resources from "./components/Resources/Resources";
 import Job from "./components/Job/Job";
+import CampusEvents from "./components/CampusEvents/CampusEvents";
+import Student from "./components/Student/Student";
 
 function App() {
   const user = useSelector((state) => state.authReducer.authData);
@@ -60,6 +62,8 @@ function App() {
         <Route exact path='/academiccal' element={<Academiccal />} />
         <Route exact path='/resources' element={<Resources />} />
         <Route exact path='/job' element={<Job />} />
+        <Route exact path='/campus' element={<CampusEvents />} />
+        <Route exact path='/student' element={<Student />} />
       </Routes>
     </div>
   );
