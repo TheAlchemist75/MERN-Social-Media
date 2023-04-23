@@ -18,5 +18,115 @@
 .announcement-header p {
     font-size: 1rem;
     color: #4c4c4c;
+    padding-bottom: 2rem;
 }
 
+.calendar-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    font-family: sans-serif;
+    color: #333;
+    position: relative;
+    align-self: center;
+}
+
+/* Calendar header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Calendar header left */
+.calendar-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.month-year {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Calendar header right */
+.calendar-header-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.event-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f44336;
+    margin-right: 5px;
+}
+
+.event-indicator-text {
+    font-size: 14px;
+}
+
+/* Calendar days */
+.calendar-days {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.day {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Calendar grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+.calendar-day {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: #f5f5f5;
+}
+
+.calendar-day.event {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.event-details {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: calc(-100% - 10px);
+    transform: translateY(-50%);
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    width: 120px;
+}
+
+.calendar-day.event:hover .event-details {
+    display: block;
+}
