@@ -22,15 +22,10 @@ const UserSchema = mongoose.Schema(
 			type: Boolean,
 			default: false,
 		},
-<<<<<<< HEAD
 		profilePicture: {
 			type: String,
-			default:
-				'https://blogtimenow.com/wp-content/uploads/2014/06/hide-facebook-profile-picture-notification.jpg',
+			default: 'https://icon-library.com/icon/no-profile-picture-icon-6.html.html',
 		},
-=======
-		profilePicture: String,
->>>>>>> parent of 50ec57c (Merge pull request #4 from The-Jay-Aher/master)
 		coverPicture: String,
 		about: String,
 		livesIn: String,

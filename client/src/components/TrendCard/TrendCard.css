@@ -5,6 +5,7 @@
     border-radius: 1rem;
 }
 
+
 .trend{
     display: flex;
     flex-direction: column;
@@ -32,9 +33,4 @@ ul li:hover {
 
 ul li a {
     text-decoration: none !important;
-}
-
-.sidebarListItem.active {
-    background-color: #eee;
-    border-radius: 0.5rem;
 }

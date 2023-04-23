@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal, useMantineTheme } from "@mantine/core";
-
 import FollowersCard from "../FollowersCard/FollowersCard";
 
 const FollowersModal = ({ modalOpened, setModalOpened }) => {
@@ -18,12 +17,10 @@ const FollowersModal = ({ modalOpened, setModalOpened }) => {
       opened={modalOpened}
       onClose={() => setModalOpened(false)}
     >
-      <div style={{ height: "100%", display: "flex", padding: "10px" }}>
-        <FollowersCard location="modal" style={{ flex: 1 }} />
-      </div>
+
+    <FollowersCard location='modal'/>
     </Modal>
   );
 };
-
 
 export default FollowersModal;
