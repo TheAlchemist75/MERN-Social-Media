@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useReducer, useState } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { likePost } from '../../api/PostsRequests';
 import Comment from '../../img/comment.png';
@@ -12,6 +12,7 @@ const Post = ({ data }) => {
 	const { user } = useSelector((state) => state.authReducer.authData);
 	const [liked, setLiked] = useState(data.likes.includes(user._id));
 	const [likes, setLikes] = useState(data.likes.length);
+<<<<<<< HEAD
 	const [userName, setUserName] = useState('');
 
 	useEffect(() => {
@@ -31,6 +32,42 @@ const Post = ({ data }) => {
 			isMounted = false;
 		};
 	}, [data.userId]);
+=======
+
+	// axios
+	// 	.get(`http://localhost:5000/user/${data.userId}`)
+	// 	.then(function (response) {
+	// 		// handle success
+	// 		console.log(response);
+	// 	})
+	// 	.catch(function (error) {
+	// 		// handle error
+	// 		console.log(error);
+	// 	})
+	// 	.then(function () {
+	// 		// always executed
+	// 		// const userName = response.data.username;
+	// 	});
+//----------------------------------------------------------
+// Declare the variable outside the axios function
+let userName;
+
+axios
+  .get(`http://localhost:5000/user/${data.userId}`)
+  .then(function (response) {
+    // Set the value of the userName variable inside the response function
+    userName = response.data.username;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () {
+    // Display the userName variable in the username div element
+    const usernameDiv = document.querySelector('.username');
+    usernameDiv.innerHTML = `<b>${userName}</b>`;
+  });
+>>>>>>> parent of 50ec57c (Merge pull request #4 from The-Jay-Aher/master)
 
 	const handleLike = () => {
 		likePost(data._id, user._id);
@@ -40,7 +77,7 @@ const Post = ({ data }) => {
 	return (
 		<div className='Post'>
 			<div className='username'>
-				<b>{userName}</b>
+				<b>{`<b>${userName}</b>`}</b>
 			</div>
 			<div className='detail'>
 				<span>
