@@ -82,6 +82,8 @@
 .day {
     font-size: 14px;
     font-weight: bold;
+    padding: 10px;
+    font-size: 0.8rem;
 }
 
 /* Calendar grid */
