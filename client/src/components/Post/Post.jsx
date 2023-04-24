@@ -12,42 +12,6 @@ const Post = ({ data }) => {
 	const { user } = useSelector((state) => state.authReducer.authData);
 	const [liked, setLiked] = useState(data.likes.includes(user._id));
 	const [likes, setLikes] = useState(data.likes.length);
-
-	// axios
-	// 	.get(`http://localhost:5000/user/${data.userId}`)
-	// 	.then(function (response) {
-	// 		// handle success
-	// 		console.log(response);
-	// 	})
-	// 	.catch(function (error) {
-	// 		// handle error
-	// 		console.log(error);
-	// 	})
-	// 	.then(function () {
-	// 		// always executed
-	// 		// const userName = response.data.username;
-	// 	});
-	//----------------------------------------------------------
-	// Declare the variable outside the axios function
-	// let userName;
-
-	// axios
-	// 	.get(`http://localhost:5000/user/${data.userId}`)
-	// 	.then(function (response) {
-	// 		// Set the value of the userName variable inside the response function
-	// 		userName = [response.data.username];
-	// 		console.log(userName);
-	// 	})
-	// 	.catch(function (error) {
-	// 		// handle error
-	// 		console.log(error);
-	// 	});
-	//   .then(function () {
-	//     // Display the userName variable in the username div element
-	//     const usernameDiv = document.querySelector('.username');
-	//     usernameDiv.innerHTML = `<b>${userName}</b>`;
-	//   });
-
 	const [userName, setUserName] = useState('');
 
 	useEffect(() => {
@@ -59,7 +23,7 @@ const Post = ({ data }) => {
 			.catch(function (error) {
 				console.log(error);
 			});
-	}, []);
+	}, [data.userId]);
 
 	const handleLike = () => {
 		likePost(data._id, user._id);
